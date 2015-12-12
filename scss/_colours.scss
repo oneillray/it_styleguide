@@ -1,8 +1,19 @@
 
+// section colours
+$news-color: #CC0000;
+$sport-color: #3ea447;
+$business-color: #1190af;
+$opinion-color: #777552;
+$lifestyle-color: #f60;
+$culture-color: #b74f7d;
+$more-color: #006666;
+
+// subscribe colours
 $subscribe-yellow: #FAD165;
 $subscribe-border:#BB9C4B;
 $subscribe-hover:#DFBA5A;
 
+// default / base colours
 $primary-blue: #3989CF;
 $primary-border: #2E6FA9;
 $primary-hover: #3071A9 ;
@@ -26,3 +37,40 @@ $grey-body-text:#515151;
 // others 
 
 $rt-red: #b41710;
+
+$colours: (
+	'news'      : $news-color,
+	'sport'     : $sport-color,
+	'business'  : $business-color,
+	'opinion'   : $opinion-color,
+	'lifestyle' : $lifestyle-color,
+	'culture'   : $culture-color,
+	'more'      : $more-color
+);
+
+.it__style-container {
+	display: flex;
+	width: 100%;
+	align-items: center;
+  	justify-content: center;
+}
+.it__colour {
+
+	color:#fff;
+	text-align:center;
+	vertical-align: middle;
+}
+@each $name, $color in $colours {
+
+	.it__colour--#{$name} {
+		background:$color;
+		&:after {
+			content: "#{$color}";
+			vertical-align: center;
+			display: block;
+			color: #fff;
+    		margin: 33px 16px;
+			
+		}
+	}
+}

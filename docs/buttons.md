@@ -17,24 +17,40 @@ Use the standard—yet classy—`.it-btn` for form actions and primary page acti
 When using a `<button>` element, **always specify a `type`**. When using a `<a>` element, **always add `role="button"` for accessibility**.
 
 {% example html %}
-<button class="it-btn" type="button">Button button</button>
+<button class="it-btn btn-base" type="button">Button </button>
 <a class="it-btn" href="#" role="button">Link button</a>
 {% endexample %}
 
 You can find them in two sizes: the default `.btn` and the smaller `.btn-sm`.
 
 {% example html %}
-<button class="it-btn" type="button">Button</button>
-<button class="it-btn it-btn-sm" type="button">Small button</button>
+<button class="it-btn btn-base" type="button">Button</button>
+<button class="it-btn btn-base it-btn-sm" type="button">Small button</button>
 {% endexample %}
 
-## Primary
+### Alternate base 
+{% example html %}
+<button class="it-btn btn-base--alt" type="button">Button</button>
+<button class="it-btn btn-base--alt it-btn-sm" type="button">Small button</button>
+{% endexample %}
 
-Primary buttons are green and are used to indicate the *primary* action on a page. When you need your buttons to stand out, use `.btn.btn-primary`. You can use it with both button sizes—just add `.btn-primary`.
+## Utility
+
+Utility buttons are outlines and are used to indicate the *utility* action on a page. When you need your buttons to stand out, use `.btn.btn-utility`. You can use it with both button sizes—just add `.btn-utility`.
 
 {% example html %}
-<button class="btn btn-primary" type="button">Primary button</button>
-<button class="btn btn-sm btn-primary" type="button">Small primary button</button>
+<button class="it-btn btn-utility" type="button">Utility </button>
+<button class="it-btn btn-sm btn-utility" type="button">Small utility button</button>
+{% endexample %}
+
+
+## Subscribe
+
+Subscribe buttons are yellow and are used to indicate the main *cta* actions on a page to drive subscribtions. When you need your buttons to stand out, use `.it-btn.it-btn-subscribe`. You can use it with both button sizes—just add `.it-btn-subscribe`.
+
+{% example html %}
+<button class="it-btn btn-subscribe" type="button">Subscribe </button>
+<button class="it-btn it-btn-sm btn-subscribe" type="button">Small primary button</button>
 {% endexample %}
 
 <!-- ## Danger

@@ -7,14 +7,12 @@ The look and feel of our company and product relies on using a handful of specif
 
 ### Branding
 
-<div class="swatch swatch-blue"></div>
-<div class="swatch swatch-green"></div>
-<div class="swatch swatch-red"></div>
-<div class="swatch swatch-orange"></div>
-<div class="swatch swatch-purple"></div>
-
-### Grayscale
-
-<div class="swatch swatch-gray-light"></div>
-<div class="swatch swatch-gray"></div>
-<div class="swatch swatch-gray-dark"></div>
+<div class="it__style-container">
+	<div class="swatch it__colour--news"></div>
+	<div class="swatch it__colour--sport"></div>
+	<div class="swatch it__colour--business"></div>
+	<div class="swatch it__colour--opinion"></div>
+	<div class="swatch it__colour--lifestyle"></div>
+	<div class="swatch it__colour--culture"></div>
+	<div class="swatch it__colour--more"></div>
+</div>

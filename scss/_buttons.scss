@@ -39,19 +39,43 @@ hover transistions
     } 
   }
   
-  &.btn-signin{
+  &.btn-signin, &.btn-base{
     background-color: $primary-blue;
     border: 1px solid $primary-border;
     color: #FFF;
     &:hover{
        background-color:$primary-hover;
     } 
-  }   
+  }
+
+  &.btn-base--alt {
+    background-color: $primary-blue;
+    border: 1px solid darken($primary-blue, 1%);
+    color: #fff;
+
+  }
+
+  &.btn-utility {
+    background-color: transparent;
+    border: 2px solid $grey-dark;
+    color: $grey-dark;
+    &:hover{
+       background-color:$grey-dark;
+       color: #fff;
+
+    } 
+  }    
 }
 
 .it-btn-sm {
   font-size: 80%;
   padding: 2px 6px;
+
+}
+
+.it-btn-lg {
+  font-size: 120%;
+  padding: 7px 6px;
 
 }
 
