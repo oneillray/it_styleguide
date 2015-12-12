@@ -44,22 +44,25 @@
   <div class="one-fourth column">
     
       <nav class="menu docs-menu">
-  <a class="menu-item " href="/scaffolding/">
+ <!--  <a class="menu-item " href="/scaffolding/">
     Scaffolding
   </a>
   <a class="menu-item " href="/layout/">
     Layout
-  </a>
+  </a> -->
   <a class="menu-item " href="/type/">
     Type
+  </a>
+  <a class="menu-item " href="/colors/">
+    Colors
   </a>
   <a class="menu-item selected" href="/buttons/">
     Buttons
   </a>
-  <a class="menu-item " href="/forms/">
+  <!-- <a class="menu-item " href="/forms/">
     Forms
-  </a>
-  <a class="menu-item " href="/nav/">
+  </a> -->
+  <!-- <a class="menu-item " href="/nav/">
     Navigation
   </a>
   <a class="menu-item " href="/alerts/">
@@ -76,7 +79,7 @@
   </a>
   <a class="menu-item " href="/tooltips/">
     Tooltips
-  </a>
+  </a> -->
   <a class="menu-item " href="/utilities/">
     Utilities
   </a>
@@ -106,103 +109,124 @@
 <h2 id="contents">Contents</h2>
 
 <ul id="markdown-toc">
-  <li><a href="#contents" id="markdown-toc-contents">Contents</a></li>
-  <li><a href="#default-buttons" id="markdown-toc-default-buttons">Default buttons</a></li>
-  <li><a href="#primary" id="markdown-toc-primary">Primary</a></li>
-  <li><a href="#danger" id="markdown-toc-danger">Danger</a></li>
-  <li><a href="#outline" id="markdown-toc-outline">Outline</a></li>
-  <li><a href="#disabled-state" id="markdown-toc-disabled-state">Disabled state</a></li>
-  <li><a href="#block-buttons" id="markdown-toc-block-buttons">Block buttons</a></li>
-  <li><a href="#with-counts" id="markdown-toc-with-counts">With counts</a></li>
-  <li><a href="#button-groups" id="markdown-toc-button-groups">Button groups</a></li>
-  <li><a href="#hidden-text-button" id="markdown-toc-hidden-text-button">Hidden text button</a></li>
+  <li><a href="#contents">Contents</a></li>
+  <li><a href="#default-buttons">Default buttons</a>    <ul>
+      <li><a href="#alternate-base">Alternate base</a></li>
+    </ul>
+  </li>
+  <li><a href="#utility">Utility</a></li>
+  <li><a href="#subscribe">Subscribe</a></li>
 </ul>
 
 <h2 id="default-buttons">Default buttons</h2>
 
-<p>Use the standard—yet classy—<code>.btn</code> for form actions and primary page actions. These are used extensively around the site.</p>
+<p>Use the standard—yet classy—<code>.it-btn</code> for form actions and primary page actions. These are used extensively around the site.</p>
 
 <p>When using a <code>&lt;button&gt;</code> element, <strong>always specify a <code>type</code></strong>. When using a <code>&lt;a&gt;</code> element, <strong>always add <code>role="button"</code> for accessibility</strong>.</p>
 
-<div class="docs-example clearfix"><button class="btn" type="button">Button button</button>
-<a class="btn" href="#" role="button">Link button</a></div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>Button button<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"btn"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>Link button<span class="nt">&lt;/a&gt;</span></code></pre></div>
+<div class="docs-example clearfix"><button class="it-btn btn-base" type="button">Button </button>
+<a class="it-btn" href="#" role="button">Link button</a></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"it-btn btn-base"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>Button <span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"it-btn"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>Link button<span class="nt">&lt;/a&gt;</span></code></pre></div>
 
 <p>You can find them in two sizes: the default <code>.btn</code> and the smaller <code>.btn-sm</code>.</p>
 
-<div class="docs-example clearfix"><button class="btn" type="button">Button</button>
-<button class="btn btn-sm" type="button">Small button</button></div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-sm"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>Small button<span class="nt">&lt;/button&gt;</span></code></pre></div>
+<div class="docs-example clearfix"><button class="it-btn btn-base" type="button">Button</button>
+<button class="it-btn btn-base it-btn-sm" type="button">Small button</button></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"it-btn btn-base"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"it-btn btn-base it-btn-sm"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>Small button<span class="nt">&lt;/button&gt;</span></code></pre></div>
 
-<h2 id="primary">Primary</h2>
+<h3 id="alternate-base">Alternate base</h3>
 
-<p>Primary buttons are green and are used to indicate the <em>primary</em> action on a page. When you need your buttons to stand out, use <code>.btn.btn-primary</code>. You can use it with both button sizes—just add <code>.btn-primary</code>.</p>
+<div class="docs-example clearfix"><button class="it-btn btn-base--alt" type="button">Button</button>
+<button class="it-btn btn-base--alt it-btn-sm" type="button">Small button</button></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"it-btn btn-base--alt"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"it-btn btn-base--alt it-btn-sm"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>Small button<span class="nt">&lt;/button&gt;</span></code></pre></div>
 
-<div class="docs-example clearfix"><button class="btn btn-primary" type="button">Primary button</button>
-<button class="btn btn-sm btn-primary" type="button">Small primary button</button></div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>Primary button<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-sm btn-primary"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>Small primary button<span class="nt">&lt;/button&gt;</span></code></pre></div>
+<h2 id="utility">Utility</h2>
 
-<h2 id="danger">Danger</h2>
+<p>Utility buttons are outlines and are used to indicate the <em>utility</em> action on a page. When you need your buttons to stand out, use <code>.btn.btn-utility</code>. You can use it with both button sizes—just add <code>.btn-utility</code>.</p>
 
-<p>Danger buttons are red. They help reiterate that the intended action is important or potentially dangerous (e.g., deleting a repo or transferring ownership). Similar to the primary buttons, just add <code>.btn-danger</code>.</p>
+<div class="docs-example clearfix"><button class="it-btn btn-utility" type="button">Utility </button>
+<button class="it-btn btn-sm btn-utility" type="button">Small utility button</button></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"it-btn btn-utility"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>Utility <span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"it-btn btn-sm btn-utility"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>Small utility button<span class="nt">&lt;/button&gt;</span></code></pre></div>
+
+<h2 id="subscribe">Subscribe</h2>
+
+<p>Subscribe buttons are yellow and are used to indicate the main <em>cta</em> actions on a page to drive subscribtions. When you need your buttons to stand out, use <code>.it-btn.it-btn-subscribe</code>. You can use it with both button sizes—just add <code>.it-btn-subscribe</code>.</p>
+
+<div class="docs-example clearfix"><button class="it-btn btn-subscribe" type="button">Subscribe </button>
+<button class="it-btn it-btn-sm btn-subscribe" type="button">Small primary button</button></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"it-btn btn-subscribe"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>Subscribe <span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"it-btn it-btn-sm btn-subscribe"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>Small primary button<span class="nt">&lt;/button&gt;</span></code></pre></div>
+
+<!-- ## Danger
+
+Danger buttons are red. They help reiterate that the intended action is important or potentially dangerous (e.g., deleting a repo or transferring ownership). Similar to the primary buttons, just add `.btn-danger`.
+
 
 <div class="docs-example clearfix"><button class="btn btn-danger" type="button">Danger button</button>
-<button class="btn btn-sm btn-danger" type="button">Small danger button</button></div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-danger"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>Danger button<span class="nt">&lt;/button&gt;</span>
+<button class="btn btn-sm btn-danger" type="button">Small danger button</button></div><div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-danger"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>Danger button<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-sm btn-danger"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>Small danger button<span class="nt">&lt;/button&gt;</span></code></pre></div>
 
-<h2 id="outline">Outline</h2>
 
-<p>Outline buttons downplay an action as they appear like boxy links. Just add <code>.btn-outline</code> and go.</p>
+## Outline
+
+Outline buttons downplay an action as they appear like boxy links. Just add `.btn-outline` and go.
+
 
 <div class="docs-example clearfix"><button class="btn btn-outline" type="button">Outline button</button>
-<button class="btn btn-sm btn-outline" type="button">Outline button</button></div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-outline"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>Outline button<span class="nt">&lt;/button&gt;</span>
+<button class="btn btn-sm btn-outline" type="button">Outline button</button></div><div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-outline"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>Outline button<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-sm btn-outline"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>Outline button<span class="nt">&lt;/button&gt;</span></code></pre></div>
 
-<h2 id="disabled-state">Disabled state</h2>
 
-<p>Disable <code>&lt;button&gt;</code> elements with the boolean <code>disabled</code> attribute and <code>&lt;a&gt;</code> elements with the <code>.disabled</code> class.</p>
+## Disabled state
 
-<div class="docs-example clearfix"><button class="btn" type="button" disabled="">Disabled button</button>
-<a class="btn disabled" href="#" role="button">Disabled button</a></div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">disabled</span><span class="nt">&gt;</span>Disabled button<span class="nt">&lt;/button&gt;</span>
+Disable `<button>` elements with the boolean `disabled` attribute and `<a>` elements with the `.disabled` class.
+
+
+<div class="docs-example clearfix"><button class="btn" type="button" disabled>Disabled button</button>
+<a class="btn disabled" href="#" role="button">Disabled button</a></div><div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">disabled</span><span class="nt">&gt;</span>Disabled button<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"btn disabled"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>Disabled button<span class="nt">&lt;/a&gt;</span></code></pre></div>
 
-<p>Similar styles are applied to primary, danger, and outline buttons:</p>
 
-<div class="docs-example clearfix"><button class="btn btn-primary" type="button" disabled="">Disabled button</button>
-<a class="btn btn-primary disabled" href="#" role="button">Disabled button</a></div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">disabled</span><span class="nt">&gt;</span>Disabled button<span class="nt">&lt;/button&gt;</span>
+Similar styles are applied to primary, danger, and outline buttons:
+
+
+<div class="docs-example clearfix"><button class="btn btn-primary" type="button" disabled>Disabled button</button>
+<a class="btn btn-primary disabled" href="#" role="button">Disabled button</a></div><div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">disabled</span><span class="nt">&gt;</span>Disabled button<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"btn btn-primary disabled"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>Disabled button<span class="nt">&lt;/a&gt;</span></code></pre></div>
 
-<div class="docs-example clearfix"><button class="btn btn-danger" type="button" disabled="">Disabled button</button>
-<a class="btn btn-danger disabled" href="#" role="button">Disabled button</a></div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-danger"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">disabled</span><span class="nt">&gt;</span>Disabled button<span class="nt">&lt;/button&gt;</span>
+
+
+<div class="docs-example clearfix"><button class="btn btn-danger" type="button" disabled>Disabled button</button>
+<a class="btn btn-danger disabled" href="#" role="button">Disabled button</a></div><div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-danger"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">disabled</span><span class="nt">&gt;</span>Disabled button<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"btn btn-danger disabled"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>Disabled button<span class="nt">&lt;/a&gt;</span></code></pre></div>
 
-<div class="docs-example clearfix"><button class="btn btn-outline" type="button" disabled="">Disabled button</button>
-<a class="btn btn-outline disabled" href="#" role="button">Disabled button</a></div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-outline"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">disabled</span><span class="nt">&gt;</span>Disabled button<span class="nt">&lt;/button&gt;</span>
+
+
+<div class="docs-example clearfix"><button class="btn btn-outline" type="button" disabled>Disabled button</button>
+<a class="btn btn-outline disabled" href="#" role="button">Disabled button</a></div><div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-outline"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">disabled</span><span class="nt">&gt;</span>Disabled button<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"btn btn-outline disabled"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>Disabled button<span class="nt">&lt;/a&gt;</span></code></pre></div>
 
-<h2 id="block-buttons">Block buttons</h2>
 
-<p>Make any button full-width by adding <code>.btn-block</code>. It adds <code>width: 100%;</code>, changes the <code>display</code> from <code>inline-block</code> to <code>block</code>, and centers the button text.</p>
+## Block buttons
+
+Make any button full-width by adding `.btn-block`. It adds `width: 100%;`, changes the `display` from `inline-block` to `block`, and centers the button text.
+
 
 <div class="docs-example clearfix"><p><button class="btn btn-block" type="button">Block button</button></p>
-<p><button class="btn btn-sm btn-block" type="button">Small block button</button></p></div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p&gt;&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-block"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>Block button<span class="nt">&lt;/button&gt;&lt;/p&gt;</span>
+<p><button class="btn btn-sm btn-block" type="button">Small block button</button></p></div><div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p&gt;&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-block"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>Block button<span class="nt">&lt;/button&gt;&lt;/p&gt;</span>
 <span class="nt">&lt;p&gt;&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-sm btn-block"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>Small block button<span class="nt">&lt;/button&gt;&lt;/p&gt;</span></code></pre></div>
 
-<h2 id="with-counts">With counts</h2>
 
-<p>You can easily append a count to a <strong>small button</strong>. Add the <code>.with-count</code> class to the <code>.btn-sm</code> and then add the <code>.social-count</code> after the button.</p>
+## With counts
 
-<p><strong>Be sure to clear the float added by the additional class.</strong></p>
+You can easily append a count to a **small button**. Add the `.with-count` class to the `.btn-sm` and then add the `.social-count` after the button.
+
+**Be sure to clear the float added by the additional class.**
+
 
 <div class="docs-example clearfix"><div class="clearfix">
   <a class="btn btn-sm btn-with-count" href="#" role="button">
@@ -210,8 +234,7 @@
     Watch
   </a>
   <a class="social-count" href="#">6</a>
-</div></div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"clearfix"</span><span class="nt">&gt;</span>
+</div></div><div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"clearfix"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"btn btn-sm btn-with-count"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"octicon octicon-eye"</span><span class="nt">&gt;&lt;/span&gt;</span>
     Watch
@@ -219,7 +242,9 @@
   <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"social-count"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>6<span class="nt">&lt;/a&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></div>
 
-<p>You can also use the <a href="../utilities/#counter">counter</a> component within buttons:</p>
+
+You can also use the [counter](../utilities/#counter) component within buttons:
+
 
 <div class="docs-example clearfix"><button class="btn" type="button">
   Button
@@ -239,8 +264,7 @@
 <button class="btn btn-outline" type="button">
   Button
   <span class="counter">12</span>
-</button></div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>
+</button></div><div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>
   Button
   <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"counter"</span><span class="nt">&gt;</span>12<span class="nt">&lt;/span&gt;</span>
 <span class="nt">&lt;/button&gt;</span>
@@ -260,9 +284,11 @@
   <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"counter"</span><span class="nt">&gt;</span>12<span class="nt">&lt;/span&gt;</span>
 <span class="nt">&lt;/button&gt;</span></code></pre></div>
 
-<h2 id="button-groups">Button groups</h2>
 
-<p>Have a hankering for a series of buttons that are attached to one another? Wrap them in a <code>.btn-group</code> and the buttons will be rounded and spaced automatically.</p>
+## Button groups
+
+Have a hankering for a series of buttons that are attached to one another? Wrap them in a `.btn-group` and the buttons will be rounded and spaced automatically.
+
 
 <div class="docs-example clearfix"><div class="btn-group">
   <button class="btn" type="button">Button</button>
@@ -280,8 +306,7 @@
   <button class="btn btn-sm" type="button">Button</button>
   <button class="btn btn-sm" type="button">Button</button>
   <button class="btn btn-sm" type="button">Button</button>
-</div></div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group"</span><span class="nt">&gt;</span>
+</div></div><div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
   <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
   <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
@@ -299,9 +324,11 @@
   <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-sm"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></div>
 
-<p>Add <code>.button_to</code> to <code>&lt;form&gt;</code>s within <code>.btn-group</code>s for proper spacing and rounded corners.</p>
 
-<p><strong>Heads up!</strong> This class name is inconsistent and will change in the next major version.</p>
+Add `.button_to` to `<form>`s within `.btn-group`s for proper spacing and rounded corners.
+
+**Heads up!** This class name is inconsistent and will change in the next major version.
+
 
 <div class="docs-example clearfix"><div class="btn-group">
   <form class="button_to">
@@ -309,8 +336,7 @@
   </form>
   <button class="btn" type="button">Button</button>
   <button class="btn" type="button">Button</button>
-</div></div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group"</span><span class="nt">&gt;</span>
+</div></div><div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"button_to"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>Button in a form<span class="nt">&lt;/button&gt;</span>
   <span class="nt">&lt;/form&gt;</span>
@@ -318,18 +344,21 @@
   <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></div>
 
-<h2 id="hidden-text-button">Hidden text button</h2>
 
-<p>Use <code>.hidden-text-expander</code> to indicate and toggle hidden text.</p>
+## Hidden text button
+
+Use `.hidden-text-expander` to indicate and toggle hidden text.
+
 
 <div class="docs-example clearfix"><span class="hidden-text-expander">
   <a href="#">&hellip;</a>
-</span></div>
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"hidden-text-expander"</span><span class="nt">&gt;</span>
+</span></div><div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"hidden-text-expander"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span><span class="ni">&amp;hellip;</span><span class="nt">&lt;/a&gt;</span>
 <span class="nt">&lt;/span&gt;</span></code></pre></div>
 
-<p>You can also make the expander appear inline by adding <code>.inline</code>.</p>
+
+You can also make the expander appear inline by adding `.inline`.
+ -->
 
     </div>
   </div>
