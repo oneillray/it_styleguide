@@ -12,7 +12,7 @@ version: 2.3.5
 
 sass:
   sass_dir: ../
-  style: compressed
+  style: nested
 
 github:
   repo: https://github.com/oneillray/it_styleguide
