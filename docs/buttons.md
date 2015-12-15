@@ -40,7 +40,7 @@ Utility buttons are outlines and are used to indicate the *utility* action on a 
 
 {% example html %}
 <button class="it-btn btn-utility" type="button">Utility </button>
-<button class="it-btn btn-sm btn-utility" type="button">Small utility button</button>
+<button class="it-btn btn-sm btn-utility" type="button">Small utility </button>
 {% endexample %}
 
 
