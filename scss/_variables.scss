@@ -13,6 +13,15 @@ $brand-purple:     #6e5494 !default;
 
 // Font stack
 $body-font: Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$georgia: "Georgia", "Cambria", "Times New Roman", "Times", serif;
+$helvetica: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+
+
+// Custom font declaration
+@include font-face('DINWeb-Bold', 'DINWeb-BoldV2', bold, normal, 'serif');
+@include font-face('DINWeb-Medium', 'DINWebPro-Medium', normal, normal, 'serif');
+
+
 
 // The base body size
 $body-font-size: 13px !default;
