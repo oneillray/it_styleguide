@@ -6,12 +6,12 @@ kramdown:
 
 permalink: pretty
 source: docs
-baseurl: ""
+baseurl: "/it_styleguide"
 
 version: 2.3.5
 
 sass:
-  sass_dir: '/it_styleguide'
+  sass_dir: ../
   style: compressed
 
 github:
