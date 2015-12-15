@@ -66,10 +66,9 @@ $colours: (
 		background:$color;
 		&:after {
 			content: "#{$color}";
-			vertical-align: center;
-			display: block;
 			color: #fff;
-    		margin: 33px 16px;
+			font-family: $body-font;
+			font-size: $body-font-size;
 			
 		}
 	}
