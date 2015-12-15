@@ -77,3 +77,56 @@ $colours: (
 		}
 	}
 }
+
+
+// Political Party colours
+
+$ff: #40b34f;
+$sf: #128566;
+$fg: #2f3590;
+$lp: #c72831;
+$sd: #1dafec;
+$sp: #ef5b2f;
+$aaa: #c4568b;
+$gp: #b4d144;
+$ri: #168dcd;
+$io: #231f20;
+
+$ge-colours: (
+	'ff'   : $ff,
+	'fg'     : $fg,
+	'sf'  : $sf,
+	'lp'   : $lp,
+	'sd' : $sd,
+	'sp'   : $sp,
+	'gp'   : $gp,
+	'ri'   : $ri,
+	'io'   : $io,
+	'aaa'  : $aaa
+);
+
+.it__style-container {
+	display: flex;
+	width: 100%;
+}
+.it__colour {
+
+	flex-grow: 1;
+	color:#fff;
+	margin: 0.1%;
+	text-align:center;
+	min-width: 150px;
+	line-height:100px;
+}
+@each $name, $color in $ge-colours {
+
+	.ge__colour--#{$name} {
+		background:$color;
+		&:after {
+		//	content: "#{$name}";
+			content: "#{$color}";
+			font-family: helvetica;
+			
+		}
+	}
+}

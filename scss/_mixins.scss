@@ -52,3 +52,40 @@
   text-decoration: none;
   -webkit-font-smoothing: antialiased;
 }
+
+
+//font face for custom web fonts
+@mixin font-face($style-name, $file, $weight, $style, $category:"") {
+    $filepath: "../fonts/" + $file;
+    @font-face {
+        font-family: "#{$style-name}";
+        src: url($filepath + ".eot");
+        src: url($filepath + ".eot?#iefix") format('embedded-opentype'), url($filepath + ".woff") format('woff');
+    font-weight: $weight;
+    font-style: $style;
+
+    }
+    %#{$style-name} {
+        font: {
+            @if $category != "" {
+                family: "#{$style-name}", #{$category};
+        font-weight: $weight;
+        font-style: $style;
+            }
+            @else {
+                family: "#{$style-name}";
+      }
+        }
+    }
+}
+
+@mixin small-sans-serif-text{
+  font:{
+    family: $helvetica;
+    size: 13px;
+    weight: normal;
+  }
+  color: $grey-dark;
+}
+
+
