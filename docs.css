@@ -367,8 +367,7 @@ th {
   padding: 0; }
 
 * {
-  box-sizing: border-box;
-  background: pink; }
+  box-sizing: border-box; }
 
 input,
 select,
