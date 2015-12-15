@@ -13,26 +13,26 @@
       Guidelines &middot; Primer
     </title>
 
-    <link rel="stylesheet" href="/docs.css">
+    <link rel="stylesheet" href="/it_styleguide/docs.css">
 
     <!-- Favicons -->
-    <link rel="apple-touch-icon-precomposed" href="/img/apple-touch-icon-precomposed.png">
-    <link rel="icon" href="/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="/it_styleguide/img/apple-touch-icon-precomposed.png">
+    <link rel="icon" href="/it_styleguide/favicon.ico">
   </head>
   <body>
 
     <header class="masthead">
       <div class="container">
-        <a href="/" class="masthead-logo">
+        <a href="/it_styleguide/" class="masthead-logo">
           <span class="mega-octicon octicon-package"></span>
           Primer
         </a>
 
         <nav class="masthead-nav">
-          <a  href="/scaffolding">Docs</a>
-          <a  href="/about">About</a>
-          <a href="https://github.com/primer/primer" target="_blank">GitHub</a>
-          <a href="https://github.com/primer/primer/blob/master/README.md#install" target="_blank">Install</a>
+          <a  href="/it_styleguide/scaffolding">Docs</a>
+          <a  href="/it_styleguide/about">About</a>
+          <a href="https://github.com/oneillray/it_styleguide" target="_blank">GitHub</a>
+          <a href="https://github.com/oneillray/it_styleguide/blob/master/README.md#install" target="_blank">Install</a>
         </nav>
       </div>
     </header>
@@ -44,55 +44,55 @@
   <div class="one-fourth column">
     
       <nav class="menu docs-menu">
- <!--  <a class="menu-item " href="/scaffolding/">
+ <!--  <a class="menu-item " href="/it_styleguide/scaffolding/">
     Scaffolding
   </a>
-  <a class="menu-item " href="/layout/">
+  <a class="menu-item " href="/it_styleguide/layout/">
     Layout
   </a> -->
-  <a class="menu-item " href="/type/">
+<!--   <a class="menu-item " href="/it_styleguide/type/">
     Type
-  </a>
-  <a class="menu-item " href="/colors/">
+  </a> -->
+  <a class="menu-item " href="/it_styleguide/colors/">
     Colors
   </a>
-  <a class="menu-item " href="/buttons/">
+  <a class="menu-item " href="/it_styleguide/buttons/">
     Buttons
   </a>
-  <!-- <a class="menu-item " href="/forms/">
+  <!-- <a class="menu-item " href="/it_styleguide/forms/">
     Forms
   </a> -->
-  <!-- <a class="menu-item " href="/nav/">
+  <!-- <a class="menu-item " href="/it_styleguide/nav/">
     Navigation
   </a>
-  <a class="menu-item " href="/alerts/">
+  <a class="menu-item " href="/it_styleguide/alerts/">
     Alerts
   </a>
-  <a class="menu-item " href="/blankslate/">
+  <a class="menu-item " href="/it_styleguide/blankslate/">
     Blankslate
   </a>
-  <a class="menu-item " href="/avatars/">
+  <a class="menu-item " href="/it_styleguide/avatars/">
     Avatars
   </a>
-  <a class="menu-item " href="/states/">
+  <a class="menu-item " href="/it_styleguide/states/">
     States
   </a>
-  <a class="menu-item " href="/tooltips/">
+  <a class="menu-item " href="/it_styleguide/tooltips/">
     Tooltips
   </a> -->
-  <a class="menu-item " href="/utilities/">
+<!--   <a class="menu-item " href="/it_styleguide/utilities/">
     Utilities
-  </a>
+  </a> -->
 </nav>
 
 <nav class="menu docs-menu">
-  <a class="menu-item selected" href="/guidelines/">
+  <a class="menu-item selected" href="/it_styleguide/guidelines/">
     Code guidelines
   </a>
-  <a class="menu-item " href="/colors/">
+<!--   <a class="menu-item " href="/it_styleguide/colors/">
     Colors
-  </a>
-  <a class="menu-item " href="/markdown/">
+  </a> -->
+  <a class="menu-item " href="/it_styleguide/markdown/">
     Markdown
   </a>
 </nav>
@@ -153,21 +153,21 @@
   <li>Don’t set <code>tabindex</code> manually—rely on the browser to set the order.</li>
 </ul>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"line-note"</span> <span class="na">data-attribute=</span><span class="s">"106"</span><span class="nt">&gt;</span>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"line-note"</span> <span class="na">data-attribute=</span><span class="s">"106"</span><span class="nt">&gt;</span>
   This is my paragraph of special text.
-<span class="nt">&lt;/p&gt;</span></code></pre></figure>
+<span class="nt">&lt;/p&gt;</span></code></pre></div>
 
 <h3 id="boolean-attributes">Boolean attributes</h3>
 
 <p>Many attributes don’t require a value to be set, like <code>disabled</code> or <code>checked</code>, so don’t set them.</p>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">disabled</span><span class="nt">&gt;</span>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">disabled</span><span class="nt">&gt;</span>
 
 <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">value=</span><span class="s">"1"</span> <span class="na">checked</span><span class="nt">&gt;</span>
 
 <span class="nt">&lt;select&gt;</span>
   <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"1"</span> <span class="na">selected</span><span class="nt">&gt;</span>1<span class="nt">&lt;/option&gt;</span>
-<span class="nt">&lt;/select&gt;</span></code></pre></figure>
+<span class="nt">&lt;/select&gt;</span></code></pre></div>
 
 <p>For more information, <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/common-microsyntaxes.html#boolean-attributes">read the WhatWG section</a>.</p>
 
@@ -175,13 +175,13 @@
 
 <p>Whenever possible, avoid superfluous parent elements when writing HTML. Many times this requires iteration and refactoring, but produces less HTML. For example:</p>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- Not so great --&gt;</span>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- Not so great --&gt;</span>
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"avatar"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"..."</span><span class="nt">&gt;</span>
 <span class="nt">&lt;/span&gt;</span>
 
 <span class="c">&lt;!-- Better --&gt;</span>
-<span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"avatar"</span> <span class="na">src=</span><span class="s">"..."</span><span class="nt">&gt;</span></code></pre></figure>
+<span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"avatar"</span> <span class="na">src=</span><span class="s">"..."</span><span class="nt">&gt;</span></code></pre></div>
 
 <h3 id="forms">Forms</h3>
 
@@ -196,7 +196,7 @@
 
 <p>Make use of <code>&lt;thead&gt;</code>, <code>&lt;tfoot&gt;</code>, <code>&lt;tbody&gt;</code>, and <code>&lt;th&gt;</code> tags (and <code>scope</code> attribute) when appropriate. (Note: <code>&lt;tfoot&gt;</code> goes above <code>&lt;tbody&gt;</code> for speed reasons. You want the browser to load the footer before a table full of data.)</p>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;table</span> <span class="na">summary=</span><span class="s">"This is a chart of invoices for 2011."</span><span class="nt">&gt;</span>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;table</span> <span class="na">summary=</span><span class="s">"This is a chart of invoices for 2011."</span><span class="nt">&gt;</span>
   <span class="nt">&lt;thead&gt;</span>
     <span class="nt">&lt;tr&gt;</span>
       <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>Table header 1<span class="nt">&lt;/th&gt;</span>
@@ -215,7 +215,7 @@
       <span class="nt">&lt;td&gt;</span>Table data 2<span class="nt">&lt;/td&gt;</span>
     <span class="nt">&lt;/tr&gt;</span>
   <span class="nt">&lt;/tbody&gt;</span>
-<span class="nt">&lt;/table&gt;</span></code></pre></figure>
+<span class="nt">&lt;/table&gt;</span></code></pre></div>
 
 <h2 id="scss">SCSS</h2>
 
@@ -248,7 +248,7 @@
 
 <p>Here are some good examples that apply the above guidelines:</p>
 
-<figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="c1">// Example of good basic formatting practices
+<div class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="c1">// Example of good basic formatting practices
 </span><span class="nc">.styleguide-format</span> <span class="p">{</span>
   <span class="nl">color</span><span class="p">:</span> <span class="mh">#000</span><span class="p">;</span>
   <span class="nl">background-color</span><span class="p">:</span> <span class="nf">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">,</span> <span class="mi">.5</span><span class="p">);</span>
@@ -268,7 +268,7 @@
 <span class="p">}</span>
 <span class="nc">.good</span> <span class="p">{</span>
   <span class="nl">margin-bottom</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
-<span class="p">}</span></code></pre></figure>
+<span class="p">}</span></code></pre></div>
 
 <h2 id="file-organization">File organization</h2>
 
@@ -278,7 +278,7 @@
 
 <p>GitHub.com uses a handful of bundles. Here’s a simplified representation of our two desktop bundles (split to support IE9’s maximum selector limit per CSS file) and a dedicated mobile bundle for our separate mobile views.</p>
 
-<figure class="highlight"><pre><code class="language-bash" data-lang="bash">stylesheets
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">stylesheets
 ├── github
 │   ├── base.scss
 │   ├── layout.scss
@@ -288,19 +288,19 @@
 │   └── blog.scss
 └── mobile
     ├── base.scss
-    └── files.scss</code></pre></figure>
+    └── files.scss</code></pre></div>
 
 <h3 id="including-scss-files">Including (S)CSS files</h3>
 
 <p>Previously we used <a href="https://github.com/sstephenson/sprockets">Sprockets</a> to <strong>require</strong> files in Primer and at GitHub. Nowadays, we use explicit lists of <strong>imports</strong> to control the cascade, specificity, and more.</p>
 
-<figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="c1">// Imports
+<div class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="c1">// Imports
 </span><span class="k">@import</span> <span class="s2">"primer"</span><span class="p">;</span>
 <span class="k">@import</span> <span class="s2">"component"</span><span class="p">;</span>
 <span class="k">@import</span> <span class="s2">"another_component"</span><span class="p">;</span>
 
 <span class="c1">// Rules
-</span><span class="nc">.rule</span> <span class="p">{</span> <span class="nc">...</span> <span class="p">}</span></code></pre></figure>
+</span><span class="nc">.rule</span> <span class="p">{</span> <span class="nc">...</span> <span class="p">}</span></code></pre></div>
 
 <p>This is also how Primer’s styles are to be included, should you need them.</p>
 
@@ -325,13 +325,13 @@
 
 <p>When styling a component, start with an element + class namespace (prefer class names over ids),  prefer direct descendant selectors by default, and use as little specificity as possible. Here is a good example:</p>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"category-list"</span><span class="nt">&gt;</span>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"category-list"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"item"</span><span class="nt">&gt;</span>Category 1<span class="nt">&lt;/li&gt;</span>
   <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"item"</span><span class="nt">&gt;</span>Category 2<span class="nt">&lt;/li&gt;</span>
   <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"item"</span><span class="nt">&gt;</span>Category 3<span class="nt">&lt;/li&gt;</span>
-<span class="nt">&lt;/ul&gt;</span></code></pre></figure>
+<span class="nt">&lt;/ul&gt;</span></code></pre></div>
 
-<figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="nc">.category-list</span> <span class="p">{</span> <span class="c1">// element + class namespace
+<div class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="nc">.category-list</span> <span class="p">{</span> <span class="c1">// element + class namespace
 </span>
   <span class="c1">// Direct descendant selector &gt; for list items
 </span>  <span class="o">&gt;</span> <span class="nt">li</span> <span class="p">{</span>
@@ -342,7 +342,7 @@
 </span>  <span class="nt">a</span> <span class="p">{</span>
     <span class="nl">color</span><span class="p">:</span> <span class="mh">#f00</span><span class="p">;</span>
   <span class="p">}</span>
-<span class="p">}</span></code></pre></figure>
+<span class="p">}</span></code></pre></div>
 
 <h3 id="css-specificity-guidelines">CSS Specificity guidelines</h3>
 
@@ -363,7 +363,7 @@
       </footer>
     </div>
 
-    <script src="/js/anchor.min.js"></script>
+    <script src="/it_styleguide/js/anchor.min.js"></script>
     <script>
       var selector = '.markdown-body h2, .markdown-body h3';
       anchors.options = {
