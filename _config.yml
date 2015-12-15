@@ -11,7 +11,7 @@ baseurl: ""
 version: 2.3.5
 
 sass:
-  sass_dir: ../
+  sass_dir: '/it_styleguide'
   style: compressed
 
 github:
