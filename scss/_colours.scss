@@ -109,15 +109,21 @@ $ge-colours: (
 	display: flex;
 	width: 100%;
 }
-.it__colour {
 
-	flex-grow: 1;
-	color:#fff;
-	margin: 0.1%;
-	text-align:center;
-	min-width: 150px;
-	line-height:100px;
+.it__colour {
+	font-family: Helvetica;
+	border: 2px solid $grey-light;
+	margin: 0 auto;
+	line-height: 2;
 }
+
+.it__colour__desc {
+	color: #000;
+	h3 {
+		margin-bottom: 0;
+	}
+}
+
 @each $name, $color in $ge-colours {
 
 	.ge__colour--#{$name} {
@@ -127,6 +133,10 @@ $ge-colours: (
 			content: "#{$color}";
 			font-family: helvetica;
 			
+		}
+		.hex-color {
+			content: "#{$color}";
+			font-family: helvetica;
 		}
 	}
 }
