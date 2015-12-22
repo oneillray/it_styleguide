@@ -5,7 +5,7 @@ title: Colors
 
 The look and feel of our company and product relies on using a handful of specific colors that help convey meaning and purpose.
 
-### Colours
+### Section Colours
 <div class="it__style-container">
 	<div class="it__colour it__colour--news"></div>
 	<div class="it__colour it__colour--sport"></div>
@@ -17,9 +17,8 @@ The look and feel of our company and product relies on using a handful of specif
 </div>
 
 
-
-
 ### General Election Policatal Party
+
 <div class="it__style-container">
 	<div class="it__colour ge__colour--ff"></div>
 	<div class="it__colour ge__colour--fg"></div>
