@@ -9,78 +9,120 @@ hover transistions
 */
 
 
-/* new vars */
+/*  Button names 
+
+.it-btn 
+.it-btn--primary
+.it-btn--subscribe 
+.it-btn--disabled 
+.it-btn--outline
+.it-btn--generic
+.it-btn--double-line
+
+.it-btn--small 
+.it-btn--big
+
+.it-btn--link
+
+*/
 
 
 .it-btn {
-    border-radius: 5px;
-    box-sizing: border-box;
     display: inline-block;
+    padding: 0.72em 3.7em;
+    border-radius: 0.25em;
+    box-sizing: border-box;
     font-family: "DINWeb-Bold",Arial,sans-serif;
-    font-size: 16px;
+    font-size: 1em;
+    border: 1px solid;
+    line-height: 1em;
     font-weight: 800;
-    height: 46px;
-    line-height: 38px;
-    padding: 5px 12px;
-    text-align: center;
     text-transform: uppercase;
     transition: all 0.2s ease-in-out 0s;
-    width: 162px;
   &:hover{
-     transition: all 0.2s ease-in-out 0s;
+    background: currentColor;
   }
   
-  &.btn-subscribe{
+  &.it-btn--subscribe{
     background-color: $subscribe-yellow;
-    border: 1px solid $subscribe-border;
+    border-color: $subscribe-border;
     color: $grey-darkest;
     &:hover{
        background-color:$subscribe-hover;
     } 
+    &:active {
+      background: darken($subscribe-border, 20%);
+    }
+  }
+  // disabled states
+  &.it-btn--disabled {
+    pointer-events: none;
+    opacity: .4;
   }
   
-  &.btn-signin, &.btn-base{
+  &.it-btn--primary{
     background-color: $primary-blue;
-    border: 1px solid $primary-border;
-    color: #FFF;
-    &:hover{
+    border-color: $primary-border;
+    color: #FFF;    
+    &:hover {
        background-color:$primary-hover;
-    } 
+    }
+    &:active {
+      background: darken($primary-border, 20%);
+    }
+  }   
+}
+
+
+.it-btn--outline {
+  background: transparent;
+  border-color: $grey-darker;
+  color: $grey-darker;
+  &:hover {
+    background: $grey-darker;
+    color: #ffffff;
   }
-
-  &.btn-base--alt {
-    background-color: $primary-blue;
-    border: 1px solid darken($primary-blue, 1%);
-    color: #fff;
-
+  &:active {
+      background: darken($grey-darker, 20%);
   }
-
-  &.btn-utility {
-    background-color: transparent;
-    border: 2px solid $grey-dark;
-    color: $grey-dark;
-    &:hover{
-       background-color:$grey-dark;
-       color: #fff;
-
-    } 
-  }    
 }
 
-.it-btn-sm {
-  font-size: 80%;
-  padding: 2px 6px;
-
+.it-btn--generic {
+  background: $grey-darkest;
+  color: #ffffff;
+  border: 1px solid darken($grey-darkest, 50%);
+  &:hover {
+    background: darken($grey-darkest, 20%);
+  }
 }
 
-.it-btn-lg {
-  font-size: 120%;
-  padding: 7px 6px;
 
+.it-btn--double-line {
+    line-height: 1.2;
+  span {
+    font-size: 80%;
+    text-transform: none;
+    font-family: arial;
+    display: block;
+    font-weight: 100;
+    color: darken($primary-blue, 15%);
+  }
 }
 
-.btn--generic {
-  background: #333333;
-  color: #fff;
-  border: 1px solid darken(#333333, 50%);
+
+.it-btn--sm {
+  padding: 0.5em 2em;
+}
+
+.it-btn--lg {
+    padding: 1.2em 4.2em;
+}
+
+.it-btn--link {
+  background: 0;
+  border: none;
+  padding: 0;
+  &:hover {
+    background: none;
+  }
 }

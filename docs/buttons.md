@@ -17,21 +17,21 @@ Use the standard—yet classy—`.it-btn` for form actions and primary page acti
 When using a `<button>` element, **always specify a `type`**. When using a `<a>` element, **always add `role="button"` for accessibility**.
 
 {% example html %}
-<button class="it-btn btn-base" type="button">Button </button>
-<a class="it-btn" href="#" role="button">Link button</a>
+<button class="it-btn it-btn--primary" type="button">Button </button>
+<a class="it-btn it-btn--link" href="#" role="button">Link button</a>
 {% endexample %}
 
-You can find them in two sizes: the default `.btn` and the smaller `.btn-sm`.
+You can find them in three sizes sizes: the default `.it-btn` and the smaller `.it-btn--sm` and larger `.it-btn--lg` .
 
 {% example html %}
-<button class="it-btn btn-base" type="button">Button</button>
-<button class="it-btn btn-base it-btn-sm" type="button">Small button</button>
+<button class="it-btn it-btn--primary" type="button">Button</button>
+<button class="it-btn it-btn--primary it-btn--sm" type="button">Small button</button>
 {% endexample %}
 
-### Alternate base 
+### Alternate base (generic) 
 {% example html %}
-<button class="it-btn btn-base--alt" type="button">Button</button>
-<button class="it-btn btn-base--alt it-btn-sm" type="button">Small button</button>
+<button class="it-btn it-btn--generic" type="button">Button</button>
+<button class="it-btn it-btn--generic it-btn-sm" type="button">Small button</button>
 {% endexample %}
 
 ## Utility
