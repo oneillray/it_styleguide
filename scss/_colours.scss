@@ -54,11 +54,11 @@ $colours: (
 	align-items: center;
   	justify-content: center;
 }
+
 .it__colour {
 
+	flex-grow: 1;
 	color:#fff;
-	text-align:center;
-	vertical-align: middle;
 	margin: 0.1%;
 	text-align:center;
 	min-width: 150px;
@@ -93,18 +93,19 @@ $ri: #168dcd;
 $io: #231f20;
 
 $ge-colours: (
-	'ff'   : $ff,
-	'fg'     : $fg,
+	'ff'  : $ff,
+	'fg'  : $fg,
 	'sf'  : $sf,
-	'lp'   : $lp,
-	'sd' : $sd,
-	'sp'   : $sp,
-	'gp'   : $gp,
-	'ri'   : $ri,
-	'io'   : $io,
-	'aaa'  : $aaa
+	'lp'  : $lp,
+	'sd'  : $sd,
+	'sp'  : $sp,
+	'gp'  : $gp,
+	'ri'  : $ri,
+	'io'  : $io,
+	'aaa' : $aaa
 );
 
+<<<<<<< HEAD
 .it__style-container {
 	display: flex;
 	width: 100%;
@@ -124,6 +125,8 @@ $ge-colours: (
 	}
 }
 
+=======
+>>>>>>> e315a7daa971f52141180c1f35a24bf35cd17924
 @each $name, $color in $ge-colours {
 
 	.ge__colour--#{$name} {
@@ -134,9 +137,13 @@ $ge-colours: (
 			font-family: helvetica;
 			
 		}
+<<<<<<< HEAD
 		.hex-color {
 			content: "#{$color}";
 			font-family: helvetica;
 		}
+=======
+}
+>>>>>>> e315a7daa971f52141180c1f35a24bf35cd17924
 	}
 }

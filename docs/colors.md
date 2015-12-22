@@ -91,5 +91,11 @@ The look and feel of our company and product relies on using a handful of specif
 
 
 
+<<<<<<< HEAD
 
 
+=======
+### View Codepen
+<p data-height="309" data-theme-id="0" data-slug-hash="PZqRzO" data-default-tab="html" data-user="roneill" class='codepen'>See the Pen <a href='http://codepen.io/roneill/pen/PZqRzO/'>it-sg_colours</a> by Ray (<a href='http://codepen.io/roneill'>@roneill</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+>>>>>>> e315a7daa971f52141180c1f35a24bf35cd17924
